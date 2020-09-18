@@ -1,11 +1,11 @@
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
-  display: flex;
-
 }
 
 .profil {
   margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
   width: 450px;
   background-color: #283e50;
   color: #ffffff;
