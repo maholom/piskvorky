@@ -100,3 +100,28 @@ body {
 .start a:hover {
   background-color: #0090e9;
 }
+
+.vysvetleni {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vysvetleni img {
+  max-width: 80%;
+}
+
+.figure1,
+.figure2,
+.figure3,
+.figure4,
+.figure5,
+.figure6 {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-style: italic;
+  padding: 10px;
+}
