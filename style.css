@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: content-box;
+}
+
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
@@ -7,7 +13,6 @@ body {
   margin: 50px;
   margin-left: auto;
   margin-right: auto;
-  min-width: ;width: 450px;
   background-color: #283e50;
   color: #ffffff;
   font-size: 14px;
@@ -43,16 +48,18 @@ body {
 }
 
 .obsah {
-  padding: 0px 10px 10px 20px;
+  padding: 0 20px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
 .instrukce {
-  font-size: 16px;;
+  font-size: 16px;
   text-align: left;
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .instrukce li {
@@ -65,14 +72,13 @@ body {
   max-width: 15px;
   max-height: 15px;
   padding-top: 5px;
-  
 }
 
 .odkazy {
   margin: 0;
   padding: 0;
   list-style: none;
-  }
+}
 
 .odkazy a {
   display: block;
@@ -81,7 +87,7 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  color:  #ffffff
+  color: #ffffff;
 }
 
 .pravidla {
@@ -117,11 +123,41 @@ body {
 .figure4,
 .figure5,
 .figure6 {
-  padding-bottom: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   font-style: italic;
-  padding: 10px;
+}
+
+.figcaption1,
+.figcaption2,
+.figcaption3,
+.figcaption4,
+.figcaption5,
+.figcaption6 {
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: center;
+  max-width: 80%;
+}
+
+@media screen and (min-width: 540px) {
+  .vysvetleni {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .zarovnani {
+    flex: 1 1 50%;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .profil {
+    max-width: 1200px;
+  }
 }
