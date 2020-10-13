@@ -22,7 +22,7 @@ body {
   flex-wrap: wrap;
   flex: 1 1 10%;
   padding: 0px;
-  margin: 0px;
+  margin-top: 30px;
 }
 
 .hraciPole button {
@@ -68,8 +68,8 @@ button {
 
 .hlavicka3 {
   font-family: 'Lobster', cursive;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
@@ -99,6 +99,21 @@ button {
   font-size: 18px;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.domecek {
+  border: 1px solid  #1cbb96;
+  padding: 15px 15px;
+  border-radius: 5px;
+  background-color:  #1cbb96;
+}
+
+.restart {
+  border: 1px solid  #0197f6;
+  padding: 15px 15px;
+  border-radius: 5px;
+  background-color:  #0197f6;
+  margin-left: 10px;
 }
 
 .foto {
