@@ -9,6 +9,34 @@ body {
   background-repeat: no-repeat;
 }
 
+.body3 {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  max-width: 80vmin;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hraciPole {
+  max-width: 80vmin;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 10%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hraciPole button {
+  opacity: 0.5;
+  border: 1px solid black;
+  padding: 0px;
+  margin: 0px;
+}
+
+button {
+  width: 7vmin;
+  height: 7vmin;
+}
+
 .profil {
   margin: 50px;
   margin-left: auto;
@@ -27,6 +55,7 @@ body {
   font-weight: normal;
   text-align: center;
 }
+
 .hlavicka2 {
   font-family: 'Lobster', cursive;
   margin: 0;
@@ -34,11 +63,42 @@ body {
   font-size: 24px;
   font-weight: normal;
   text-align: center;
+  padding-top: 20px;
 }
+
+.hlavicka3 {
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+}
+
 .nadpis {
   font-family: 'Lobster', cursive;
   font-weight: normal;
   text-align: center;
+}
+
+.navigace {
+  display: flex;
+}
+
+.navigace-vlevo {
+  display: flex;
+}
+
+.navigace-vpravo {
+  display: flex;
+}
+
+.hraju {
+  font-size: 18px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .foto {
@@ -64,6 +124,11 @@ body {
 
 .instrukce li {
   padding-bottom: 10px;
+}
+
+.kolecko3 {
+  filter: invert(100%);
+  padding-left: 10px;
 }
 
 .krizek,
