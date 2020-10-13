@@ -37,6 +37,10 @@ button {
   height: 7vmin;
 }
 
+button:hover {
+opacity: 0.6;
+}
+
 .profil {
   margin: 50px;
   margin-left: auto;
@@ -89,6 +93,7 @@ button {
 
 .navigace-vlevo {
   display: flex;
+  margin-right: 60px;
 }
 
 .navigace-vpravo {
@@ -102,10 +107,14 @@ button {
 }
 
 .domecek {
-  border: 1px solid  #1cbb96;
+  border: 1px solid  #1fcca4;
   padding: 15px 15px;
   border-radius: 5px;
-  background-color:  #1cbb96;
+  background-color:  #1fcca4;
+}
+
+a .domecek:hover {
+  background-color: #1cbb96;
 }
 
 .restart {
@@ -114,6 +123,10 @@ button {
   border-radius: 5px;
   background-color:  #0197f6;
   margin-left: 10px;
+}
+
+a .restart:hover{
+  background-color: #0090e9;
 }
 
 .foto {
@@ -144,6 +157,7 @@ button {
 .kolecko3 {
   filter: invert(100%);
   padding-left: 10px;
+  margin-bottom: 10px;
 }
 
 .krizek,
