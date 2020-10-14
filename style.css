@@ -93,6 +93,7 @@ opacity: 0.6;
 
 .navigace-vlevo {
   display: flex;
+  flex-grow: 0.8;
   margin-right: 60px;
 }
 
