@@ -33,11 +33,12 @@ body {
 }
 
 button {
-  width: 7vmin;
-  height: 7vmin;
+  width: 8vmin;
+  height: 8vmin;
 }
 
-button:hover {
+button:hover,
+button:focus {
 opacity: 0.6;
 }
 
@@ -236,6 +237,25 @@ a .restart:hover{
   padding-top: 10px;
   text-align: center;
   max-width: 80%;
+}
+
+.board__field--circle {
+  background-image: url('circle.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.board__field--cross {
+  background-image: url('cross.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.player {
+  display: inline-block;
+  padding-left: 5px;
+  filter: invert(100%);
+
 }
 
 @media screen and (min-width: 540px) {
