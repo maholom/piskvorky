@@ -9,13 +9,15 @@ const clickOutcome = (event) => {
   
   if (currentPlayer === 'circle') {
     event.target.classList.add('board__field--circle');
+    event.target.disabled = true;
     currentPlayer= 'cross';
-    playerDisplay.innerHTML = `<img src = 'circle.svg'>`
-
+    playerDisplay.innerHTML = `<img src = 'cross.svg'>`;
+    
   } else {
     event.target.classList.add('board__field--cross');
     currentPlayer = 'circle';
-    playerDisplay.innerHTML = `<img src = 'cross.svg'>`
+    playerDisplay.innerHTML = `<img src = 'circle.svg'>`
+    event.target.disabled = true;
   }
 }
 

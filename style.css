@@ -9,6 +9,8 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Hrací pole*/
+
 .body3 {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
@@ -16,13 +18,27 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.hlavicka3 {
+  font-family: 'Lobster', cursive;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+
 .hraciPole {
-  max-width: 80vmin;
+  max-width: 100%;
+  padding: 0px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 10%;
-  padding: 0px;
-  margin-top: 30px;
 }
 
 .hraciPole button {
@@ -30,11 +46,16 @@ body {
   border: 1px solid black;
   padding: 0px;
   margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 9%;
+  max-width: 100%;
 }
 
 button {
   width: 8vmin;
   height: 8vmin;
+  width: 100%; 
 }
 
 button:hover,
@@ -42,71 +63,33 @@ button:focus {
 opacity: 0.6;
 }
 
-.profil {
-  margin: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #283e50;
-  color: #ffffff;
-  font-size: 14px;
-  border-radius: 20px 20px 0 0;
-}
-
-.hlavicka {
-  font-family: 'Lobster', cursive;
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-}
-
-.hlavicka2 {
-  font-family: 'Lobster', cursive;
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.hlavicka3 {
-  font-family: 'Lobster', cursive;
-  margin: auto;
-  padding: auto;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  padding-top: 20px;
-  color: white;
-}
-
-.nadpis {
-  font-family: 'Lobster', cursive;
-  font-weight: normal;
-  text-align: center;
-}
-
 .navigace {
   display: flex;
+  max-width: 80vmin;
+  justify-content: space-between;
 }
 
 .navigace-vlevo {
   display: flex;
-  flex-grow: 0.8;
-  margin-right: 60px;
+  align-items: center;
 }
 
 .navigace-vpravo {
-  display: flex;
 }
 
 .hraju {
-  font-size: 18px;
+  font-size: 24px;
   font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.domecek {
+  border: 1px solid  #1fcca4;
+  padding: 15px 15px;
+  border-radius: 5px;
+  background-color:  #1fcca4;
+}
+
 
 .domecek {
   border: 1px solid  #1fcca4;
@@ -131,11 +114,74 @@ a .restart:hover{
   background-color: #0090e9;
 }
 
+.board__field--circle {
+  background-image: url('circle.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 80%;
+}
+
+.board__field--cross {
+  background-image: url('cross.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 80%;
+}
+
+.player {
+  display: inline-block;
+  padding-left: 5px;
+  filter: invert(100%);
+
+}
+
+
+/*Úvodní strana*/
+
+.profil {
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #283e50;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 20px 20px 0 0;
+}
+
+.hlavicka {
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
 .foto {
   display: block;
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
+
+/*Pravidla*/
+.hlavicka2 {
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nadpis {
+  font-family: 'Lobster', cursive;
+  font-weight: normal;
+  text-align: center;
+}
+
 
 .obsah {
   padding: 0 20px;
@@ -239,24 +285,6 @@ a .restart:hover{
   max-width: 80%;
 }
 
-.board__field--circle {
-  background-image: url('circle.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.board__field--cross {
-  background-image: url('cross.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.player {
-  display: inline-block;
-  padding-left: 5px;
-  filter: invert(100%);
-
-}
 
 @media screen and (min-width: 540px) {
   .vysvetleni {
